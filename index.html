@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="menu">
+        <div class="header-menu">
+          <a href="#">
+            <img src="images/logo.svg" alt="" />
+          </a>
+          <nav>
+            <a href="#" class="active">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        <div class="profile-card">
+          <div class="profile-card-container">
+            <button class="cart">
+              <img src="/images/icon-cart.svg" alt="" />
+              <span>0</span>
+            </button>
+            <div class="profile-card-content hidden">
+              <h3 class="cart-header">Cart</h3>
+              <div class="cart-content">
+                <p class="empty">Your cart is empty.</p>
+                <div class="cart-items">
+                  <div class="cart-item">
+                    <img src="/images/image-product-1-thumbnail.jpg" class="product-image" alt="" />
+                    <div class="cart-item-desc">
+                      <p class="cart-item-name">Fall Limited Edition Sneakers</p>
+                      <div class="cart-item-price-container">
+                        <p class="cart-item-price-number">$<span class="price">125.00</span> x <span class="count">3</span></p>
+                        <p class="cart-item-price-total">$<span>375.00</span></p>
+                      </div>
+                    </div>
+                    <button class="remove-item"><img src="/images/icon-delete.svg" alt="" /></button>
+                  </div>
+                </div>
+                <button class="add-to-cart">
+                  <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                      fill="#fff"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                  <span>Go to basket</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="profile">
+            <img src="/images/image-avatar.png" alt="" />
+          </button>
+        </div>
+      </header>
+      <div class="product-container">
+        <div class="product-slide">
+          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/image-product-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/image-product-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/image-product-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/image-product-4.jpg" />
+              </div>
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/image-product-1-thumbnail.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/image-product-2-thumbnail.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/image-product-3-thumbnail.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/image-product-4-thumbnail.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-content">
+          <h3 class="product-sub-title">Sneaker Company</h3>
+          <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather
+            can offer.
+          </p>
+          <div class="product-price">
+            <div class="product-price-net">
+              <p class="product-price">$125.00</p>
+              <p class="product-price-discount-ratio">50%</p>
+            </div>
+            <p class="product-old-price">$250.00</p>
+          </div>
+          <div class="product-action-buttons">
+            <div class="product-number">
+              <button class="decrease"><img src="/images/icon-minus.svg" alt="" /></button>
+              <input type="number" class="product-number-input" value="0" />
+              <button class="increase"><img src="/images/icon-plus.svg" alt="" /></button>
+            </div>
+            <button class="add-to-cart">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#fff"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span>Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
+    const toggleMenuActiveClass = (el) => {
+      allMenuItems.forEach((item) => item.classList.remove("active"));
+      el.classList.add("active");
+    };
+
+    const allMenuItems = document.querySelectorAll(".menu nav a");
+    allMenuItems.forEach((item) => item.addEventListener("click", () => toggleMenuActiveClass(item)));
+
+    const decreaseButton = document.querySelector(".product-number .decrease");
+    const increaseButton = document.querySelector(".product-number .increase");
+    const numberInput = document.querySelector(".product-number .product-number-input");
+
+    decreaseButton.addEventListener("click", () => {
+      if (Number(numberInput.value) > 0) {
+        numberInput.value = Number(numberInput.value) - 1;
+      }
+    });
+
+    increaseButton.addEventListener("click", () => (numberInput.value = Number(numberInput.value) + 1));
+
+    $(window).click(function () {
+      $(".profile-card-content").addClass("hidden");
+    });
+
+    $(".profile-card-content").click(function (event) {
+      event.stopPropagation();
+    });
+
+    $(".cart").click(function (event) {
+      event.stopPropagation();
+    });
+
+    $(".cart").click(function () {
+      $(".profile-card-content").toggleClass("hidden");
+    });
+
+    let localStorageItem = JSON.parse(localStorage.getItem("basket"));
+
+    $(".product-action-buttons .add-to-cart").click(function () {
+      $(".cart span").html(Number($(".cart span").html()) + Number($(".product-number-input").val()));
+      let itemObj = {
+        image: "/images/image-product-1-thumbnail.jpg",
+        title: "Fall Limited Edition Sneakers",
+        price: 125.0,
+        count: Number($(".cart span").html()),
+      };
+      localStorage.setItem("basket", JSON.stringify(itemObj));
+      cartUpdate();
+    });
+
+    const cartUpdate = () => {
+      localStorageItem = JSON.parse(localStorage.getItem("basket"));
+      if (localStorageItem === null) {
+        $(".profile-card-content .cart-content").addClass("cart-content-empty");
+        $(".profile-card-content .cart-content .cart-items").addClass("hidden");
+        $(".profile-card-content .cart-content .add-to-cart").addClass("hidden");
+        $(".profile-card-content .cart-content .empty").removeClass("hidden");
+      } else {
+        $(".profile-card-content .cart-content").removeClass("cart-content-empty");
+        $(".profile-card-content .cart-content .cart-items").removeClass("hidden");
+        $(".profile-card-content .cart-content .add-to-cart").removeClass("hidden");
+        $(".profile-card-content .cart-content .empty").addClass("hidden");
+        $(".cart-item .product-image").attr("src", localStorageItem.image);
+        $(".cart-item .cart-item-name").html(localStorageItem.title);
+        $(".cart-item .cart-item-name").html(localStorageItem.title);
+        $(".cart-item .cart-item-price-number .price").html(localStorageItem.price);
+        $(".cart-item .cart-item-price-number .count").html(localStorageItem.count);
+        $(".cart-item .cart-item-price-total span").html(localStorageItem.price * localStorageItem.count);
+      }
+    };
+
+    $(document).ready(function () {
+      cartUpdate();
+      $(".cart span").html(localStorageItem?.count);
+    });
+
+    $(".remove-item").click(function () {
+      localStorage.removeItem("basket");
+      cartUpdate();
+      $(".cart span").html(0);
+    });
+  </script>
+</html>
